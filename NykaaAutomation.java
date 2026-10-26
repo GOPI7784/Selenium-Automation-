@@ -23,8 +23,7 @@ public class NykaaAutomation {
 	public static void main(String[] args) throws AWTException, InterruptedException, IOException {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\GOPI V\\eclipse-workspace\\NewWorkspace"
-				+ "\\SELENIUMPROJECT\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "");
 		
 		WebDriver driver = new ChromeDriver();
 		Actions ac =new Actions(driver);
@@ -120,51 +119,47 @@ public class NykaaAutomation {
 		        Thread.sleep(3000);
 		        System.out.println("screenshot is taken");
 		        
-//			WebElement clickaddre = driver.findElement(By.xpath("//div[@class = \"css-1pan5g8 e1gecm6x0\"]"));
-//			ac.moveToElement(clickaddre).build().perform();
-//			ac.click(clickaddre).build().perform();
+		WebElement clickaddre = driver.findElement(By.xpath("//div[@class = \"css-1pan5g8 e1gecm6x0\"]"));
+		ac.moveToElement(clickaddre).build().perform();
+		ac.click(clickaddre).build().perform();
 			
 			
 		
-//		   WebElement address = driver.findElement(By.xpath("//textarea[@placeholder = \"Road Name/ Area /Colony\"]"));
-//			 ac.moveToElement(address).build().perform();
-//			 ac.click(address).build().perform();
-//			 address.sendKeys("small street parameswaramangalam arakkonam");
+	   WebElement address = driver.findElement(By.xpath("//textarea[@placeholder = \"Road Name/ Area /Colony\"]"));
+		 ac.moveToElement(address).build().perform();
+		 ac.click(address).build().perform();
+			 address.sendKeys("small street parameswaramangalam arakkonam");
 		    
-//			WebElement doorno = driver.findElement(By.xpath("//input[@placeholder = \"House/ Flat/ Office No.\"]"));
-//			 ac.moveToElement(doorno).build().perform();
-//			ac.click(doorno).build().perform();
-//			 doorno.sendKeys("159");
+		WebElement doorno = driver.findElement(By.xpath("//input[@placeholder = \"House/ Flat/ Office No.\"]"));
+			 ac.moveToElement(doorno).build().perform();
+			ac.click(doorno).build().perform();
+			 doorno.sendKeys("159");
 		    
-//			WebElement pincode = driver.findElement(By.xpath("//input[@placeholder = \"Pincode\"]"));
-//			ac.moveToElement(pincode).build().perform();
-//			ac.click(pincode).build().perform();
-//			pincode.sendKeys("631151");
-//			Thread.sleep(2000);
+		WebElement pincode = driver.findElement(By.xpath("//input[@placeholder = \"Pincode\"]"));
+			ac.moveToElement(pincode).build().perform();
+			ac.click(pincode).build().perform();
+		pincode.sendKeys("631151");
+		Thread.sleep(2000);
 		    
-//			WebElement name = driver.findElement(By.xpath("//input[@placeholder = \"Name\"]"));
-//			ac.moveToElement(name).build().perform();
-//			ac.click(name).build().perform();
-//			name.sendKeys("Gopinath");
-//		    
-//			Thread.sleep(2000);
+		WebElement name = driver.findElement(By.xpath("//input[@placeholder = \"Name\"]"));
+		ac.moveToElement(name).build().perform();
+		ac.click(name).build().perform();	name.sendKeys("Gopinath");
+			Thread.sleep(2000);
 		    
-//			 WebElement phoneno = driver.findElement(By.xpath("//input[@placeholder = \"Phone\"]"));
-//			ac.moveToElement(phoneno).build().perform();
-//			ac.click(phoneno).build().perform();
-//			phoneno.sendKeys("7904884713");
+		 WebElement phoneno = driver.findElement(By.xpath("//input[@placeholder = \"Phone\"]"));
+			ac.moveToElement(phoneno).build().perform();
+			ac.click(phoneno).build().perform();
+			phoneno.sendKeys("7904884713");
 		    
-//			Thread.sleep(2000);
+		Thread.sleep(2000);
 		    
-//			 WebElement email = driver.findElement(By.xpath("//input[@type = \"email\"]"));
-//			 ac.moveToElement(email).build().perform();
-//			 ac.click(email).build().perform();
-//			 email.sendKeys("gopinath070820@gmail.com");
+			 WebElement email = driver.findElement(By.xpath("//input[@type = \"email\"]"));
+			 ac.moveToElement(email).build().perform();			 ac.click(email).build().perform();
+			 email.sendKeys("gopinath070820@gmail.com");
 		    
-//			WebElement button = driver.findElement(By.xpath("//button[text() = \"Ship to this address\"]"));
-//			ac.moveToElement(button).build().perform();
-//			 ac.click(button).build().perform();
-//                		
+		WebElement button = driver.findElement(By.xpath("//button[text() = \"Ship to this address\"]"));
+		ac.moveToElement(button).build().perform();
+		 ac.click(button).build().perform();               		
 		  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div"
 		  		+ "[2]/div[2]/div[1]/div/div[1]/div[2]/div[3]/div[2]/button")).click();
 		  
